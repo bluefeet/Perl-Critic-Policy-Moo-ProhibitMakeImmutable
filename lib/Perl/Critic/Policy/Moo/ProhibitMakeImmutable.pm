@@ -91,7 +91,7 @@ __END__
 =head1 NAME
 
 Perl::Critic::Policy::Moo::ProhibitMakeImmutable - Makes sure that Moo classes
-do not contain calles to make_immutable.
+do not contain calls to make_immutable.
 
 =head1 DESCRIPTION
 
