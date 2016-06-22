@@ -1,0 +1,5 @@
+/Perl-Critic-Policy-Moo-ProhibitMakeImmutable*
+/.build
+*.swp
+/nytprof*
+/cover_db

@@ -1,0 +1,35 @@
+=pod
+
+=head1 NAME
+
+Perl::Critic::Policy::Moo::ProhibitMakeImmutable - Makes sure that Moo classes
+do not contain calles to make_immutable.
+
+=head1 DESCRIPTION
+
+When migrating from L<Moose> to L<Moo> it can be a common issue to accidentally
+leave in:
+
+    __PACKAGE__->meta->make_immutable;
+
+This policy complains if this exists in a Moo class as it triggers Moose to be
+loaded and metaclass created, which defeats some of the benefits you get using
+Moo instead of Moose.
+
+=head1 AUTHOR
+
+Aran Clary Deltac <bluefeetE<64>gmail.com>
+
+=head1 ACKNOWLEDGEMENTS
+
+Thanks to L<ZipRecruiter|https://www.ziprecruiter.com/>
+for encouraging their employees to contribute back to the open
+source ecosystem.  Without their dedication to quality software
+development this distribution would not exist.
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut
