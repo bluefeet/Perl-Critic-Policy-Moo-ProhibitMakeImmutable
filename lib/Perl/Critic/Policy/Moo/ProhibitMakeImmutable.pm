@@ -9,7 +9,7 @@ use Perl::Critic::Utils qw{ :severities :classification :ppi };
 use base 'Perl::Critic::Policy';
 
 Readonly::Scalar my $DESC => q{Moo class should not call ->make_immutable};
-Readonly::Scalar my $EXPL => q{When migrating from Moose to Moo it is easy to leave in __PACKAGE__->meta->make_immutablel; statements which will cause Moose to be loaded and a metaclass created};
+Readonly::Scalar my $EXPL => q{When migrating from Moose to Moo it is easy to leave in __PACKAGE__->meta->make_immutable; statements which will cause Moose to be loaded and a metaclass created};
 
 sub supported_parameters { return() }
 sub default_severity     { return $SEVERITY_MEDIUM }
