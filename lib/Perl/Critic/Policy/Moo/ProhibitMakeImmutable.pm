@@ -108,6 +108,16 @@ Moo instead of Moose.
 
 Aran Clary Deltac <bluefeetE<64>gmail.com>
 
+=head2 CONTRIBUTORS
+
+=over
+
+=item *
+
+Kivanc Yazan <kyznE<64>users.noreply.github.com>
+
+=back
+
 =head1 ACKNOWLEDGEMENTS
 
 Thanks to L<ZipRecruiter|https://www.ziprecruiter.com/>
