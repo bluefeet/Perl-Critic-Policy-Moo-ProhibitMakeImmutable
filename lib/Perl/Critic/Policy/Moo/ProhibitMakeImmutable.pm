@@ -44,7 +44,7 @@ sub violates {
 
     my $package = _find_package( $start_word );
 
-    my $includes = $doc->find(sub{
+    my $included = $doc->find_any(sub{
         $_[1]->isa('PPI::Statement::Include')
             and
         defined( $_[1]->module() )
@@ -54,9 +54,9 @@ sub violates {
         $_[1]->type() eq 'use'
             and
         _find_package( $_[1] ) eq $package
-    }) || [];
+    });
 
-    return if !@$includes;
+    return if !$included;
 
     return $self->violation( $DESC, $EXPL, $start_word );
 }
@@ -73,8 +73,8 @@ sub _find_package {
             return $element->namespace() if $element->ancestor_of( $original );
 
             # If we've hit a non-block package then thats our package.
-            my $blocks = $element->find('PPI::Structure::Block') || [];
-            return $element->namespace() if !@$blocks;
+            my $blocks = $element->find_any('PPI::Structure::Block');
+            return $element->namespace() if !$blocks;
         }
 
         # Keep walking backwards until we match the above logic or we get to
