@@ -2,6 +2,8 @@ Revision history for Perl extension Perl::Critic::Policy::Moo::ProhibitMakeImmut
 
 {{$NEXT}}
 
+0.03 2018-07-20
+
  - Optimize; we only care *if* we found a match. @bleargh45
 
 0.02 2017-12-30
