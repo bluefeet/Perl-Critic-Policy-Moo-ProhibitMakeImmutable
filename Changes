@@ -1,6 +1,8 @@
-Revision history for Perl extension Perl::Critic::Policy::Moo::ProhibitMakeImmutable.
+Revision history for Perl extension Perl-Critic-Policy-Moo-ProhibitMakeImmutable.
 
 {{$NEXT}}
+
+ - Migrate build tooling from Dist::Zilla to Minilla.
 
 0.03 2018-07-20
 

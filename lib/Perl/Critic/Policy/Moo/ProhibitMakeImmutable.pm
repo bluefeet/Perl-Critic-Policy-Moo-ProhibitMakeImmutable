@@ -1,5 +1,7 @@
 package Perl::Critic::Policy::Moo::ProhibitMakeImmutable;
 
+$Perl::Critic::Policy::Moo::ProhibitMakeImmutable::VERSION = '0.03';
+
 use strict;
 use warnings;
 
