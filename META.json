@@ -42,12 +42,17 @@
       },
       "runtime" : {
          "requires" : {
-            "Perl::Critic" : "1.123",
+            "Perl::Critic::Policy" : "1.123",
+            "Perl::Critic::Utils" : "1.123",
+            "Readonly" : "2.00",
             "perl" : "5.008001"
          }
       },
       "test" : {
          "requires" : {
+            "Moo" : "1.004005",
+            "Moose" : "1.23",
+            "Perl::Critic" : "1.123",
             "Test2::V0" : "0.000094"
          }
       }

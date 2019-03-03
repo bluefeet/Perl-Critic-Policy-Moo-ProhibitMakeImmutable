@@ -105,23 +105,11 @@ This policy complains if this exists in a Moo class as it triggers Moose to be
 loaded and metaclass created, which defeats some of the benefits you get using
 Moo instead of Moose.
 
-=head1 AUTHOR
+=head1 AUTHORS
 
-Aran Clary Deltac <bluefeetE<64>gmail.com>
-
-=head2 CONTRIBUTORS
-
-=over
-
-=item *
-
-Kivanc Yazan <kyznE<64>users.noreply.github.com>
-
-=item *
-
-Graham TerMarsch <grahamE<64>howlingfrog.com>
-
-=back
+    Aran Clary Deltac <bluefeet@gmail.com>
+    Kivanc Yazan <kyzn@users.noreply.github.com>
+    Graham TerMarsch <graham@howlingfrog.com>
 
 =head1 ACKNOWLEDGEMENTS
 
@@ -134,4 +122,6 @@ development this distribution would not exist.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
+
+=cut
 
