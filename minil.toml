@@ -1,1 +1,2 @@
 name = "Perl-Critic-Policy-Moo-ProhibitMakeImmutable"
+authority="cpan:BLUEFEET"
