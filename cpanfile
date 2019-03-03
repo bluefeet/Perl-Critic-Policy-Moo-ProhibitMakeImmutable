@@ -5,8 +5,6 @@ requires 'Perl::Critic::Utils' => '1.123';
 requires 'Readonly' => '2.00';
 
 on test => sub {
-    requires 'Moo' => '1.004005';
-    requires 'Moose' => '1.23';
     requires 'Perl::Critic' => '1.123';
     requires 'Test2::V0' => '0.000094';
 };
