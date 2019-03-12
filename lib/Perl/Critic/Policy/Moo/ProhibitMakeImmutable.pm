@@ -2,7 +2,7 @@ package Perl::Critic::Policy::Moo::ProhibitMakeImmutable;
 use 5.008001;
 use strict;
 use warnings;
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 use Readonly;
 use Perl::Critic::Utils qw{ :severities :classification :ppi };
