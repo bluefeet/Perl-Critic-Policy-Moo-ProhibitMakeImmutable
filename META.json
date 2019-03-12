@@ -1,5 +1,5 @@
 {
-   "abstract" : "Makes sure that Moo classes do not contain calls to make_immutable.",
+   "abstract" : "Makes sure that Moo classes do not contain calls to make_immutable. (DEPRECATED)",
    "author" : [
       "Aran Clary Deltac <bluefeet@gmail.com>"
    ],
@@ -74,6 +74,7 @@
       "Graham TerMarsch <graham@howlingfrog.com>",
       "Kivanc Yazan <kyzn@users.noreply.github.com>"
    ],
-   "x_serialization_backend" : "JSON::PP version 2.97001",
+   "x_deprecated" : 1,
+   "x_serialization_backend" : "JSON::PP version 4.02",
    "x_static_install" : 1
 }
